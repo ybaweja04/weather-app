@@ -1,0 +1,190 @@
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", 
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .app {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    transition: background 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .clear {
+    background: url("../src/assets/clear.webp") no-repeat center center/cover;
+  }
+  
+  .clouds {
+    background: url("../src/assets/cloudy.jpg") no-repeat center center/cover;
+  }
+  
+  .rain {
+    background: url("../src/assets/rainy.jpg") no-repeat center center/cover;
+  }
+  
+  .snow {
+    background: url("../src/assets/snow.jpg") no-repeat center center/cover;
+  }
+
+  .mist {
+    background: url("../src/assets/mist.jpg") no-repeat center center/cover;
+  }
+
+  .drizzle{
+    background: url("../src/assets/drizzle.jpg") no-repeat center center/cover;
+  }
+
+  .thunderstorm{
+    background: url("../src/assets/thunderstorm.jpg") no-repeat center center/cover;
+  }
+  
+  .default {
+    background: linear-gradient(135deg, #73a5ff, #5477f5);
+  }
+  
+
+  main {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .welcome{
+    font-size: 20px;
+    padding-bottom: 50px;
+  }
+
+  /* Search Box Styling */
+  .searbox {
+    margin-top: 20px;
+  }
+  
+  .searchBar {
+    width: 80%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(15px);
+  }
+  
+  .searchBar:focus {
+    outline: none;
+    background-color: rgba(80, 80, 80, 0.5);
+  }
+  
+  /* Location Info Section */
+  .location-box {
+    margin-top: 30px;
+  }
+  
+  .location {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .date {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+    opacity: 0.8;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Weather Box Styling */
+  .weather-box {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .weather-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .temp {
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+  
+  .weather {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    opacity: 0.9;
+  }
+  
+  /* Keyframes */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .searchBar {
+      width: 70%;
+    }
+  
+    .location {
+      font-size: 2rem;
+    }
+  
+    .temp {
+      font-size: 3rem;
+    }
+  
+    .weather {
+      font-size: 1rem;
+    }
+  
+    .weather-box {
+      width: 70%;
+    }
+    .welcome{
+        font-size: 10px;
+        padding-bottom: 50px;
+      }
+  
+    main {
+        background-color: rgba(0, 0, 0, 0.3); /* Slightly transparent black */
+        box-shadow: none; /* Remove the shadow */
+        backdrop-filter: blur(5px); /* Optional: Keep a subtle blur effect */
+        padding: 30px; /* Adjust padding for spacing */
+      }
+  }
+  
